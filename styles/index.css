@@ -162,6 +162,7 @@ body {
 
 .principais-causas h2 {
     font-size: 3rem;
+    text-align: center;
     color: #62477D;
 }
 
@@ -486,4 +487,47 @@ footer h6 {
     }
 
 
+}
+
+@media (max-width: 500px) {
+    #hero_title {
+        font-size: 1.5rem;
+        height: 2rem;
+    }
+
+    #hero_title li {
+      animation: hero-title-responsive-500 6s ease-in-out infinite;
+    }
+
+    @keyframes hero-title-responsive-500 {
+        0% {
+            transform: translateY(0);
+        }
+    
+        33%{
+            transform: translateY(0);
+        }
+    
+        40% {
+            transform: translateY(-27px);
+        }
+    
+        66% {
+            transform: translateY(-27px);
+        }
+        75% {
+            transform: translateY(-54px);
+        }
+        82% {
+            transform: translateY(-54px);
+        }
+    
+        95%{
+            transform: translateY(-54px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }   
+    }
 }
