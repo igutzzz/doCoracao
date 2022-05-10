@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doCoração</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="https://kit.fontawesome.com/218777f784.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar">
         <div id="logo">
-            <h1>doCoração</h1>
+            <h1>Prósfero</h1>
         </div>
-        <ul id="navbar_menu">
+        <ul id="navbar_menu" class="nav-menu">
             <li><a href="">Projetos</a></li>
             <li><a href="">Apoiadores</a></li>
             <li><a href="">Quem Somos</a></li>
@@ -24,41 +24,42 @@
                 </span>Login</li></a>
 
         </ul>
+        <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
     </nav>
     <main>
         <section class="hero">
             <div class="hero-image">
-                <img id="image_hero" src="./img/escola.png" alt="Criança na escola">
+                <img id="image_hero" data-aos="zoom-in" data-aos-ease="ease-in-sine" data-aos-delay="200" src="./img/hero image.svg" alt="Criança na escola">
             </div>
             <div id="hero-action">
-                <h1 id="hero_title">Doe para 
+                <h1 id="hero_title" data-aos="fade-left" data-aos-delay="500">Doe para 
                     <ul>
                         <li>escolas</li>
                         <li>animais</li>
                         <li>o meio ambiente</li>
                     </ul>
                 </h1>
-                <h2>Ajudamos ONGs a encontrarem as melhores formas de receberem ajuda </h2>
-                <button id="btn_hero">Quero doar</button>
+                <h2 data-aos="fade-up" data-aos-delay="800">Ajudamos ONGs a encontrarem as melhores formas de receberem ajuda </h2>
+                <button data-aos="fade-up" data-aos-delay="800" id="btn_hero">Quero doar</button>
             </div>
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C5FFC7" fill-opacity="1" d="M0,256L40,213.3C80,171,160,85,240,80C320,75,400,149,480,197.3C560,245,640,267,720,240C800,213,880,139,960,144C1040,149,1120,235,1200,229.3C1280,224,1360,128,1400,80L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
         <section class="principais-causas">
-            <h2>Principais causas</h2>
+            <h2 data-aos="zoom-in-down" data-aos-ease="ease-in-cubic">Principais causas</h2>
             <div class="causas-container">
-                <div class="causas-card" id="educacao_card">
+                <div class="causas-card" id="educacao_card" data-aos="zoom-in-right" data-aos-ease="ease-in-sine" data-aos-delay="200">
                     <img src="./img/escolas card.jpg" alt="">
                     <h3>Educação</h3>
                     <span id="texto_grande">+2mil</span>
                     <p>estudantes atingidos</p>
                 </div>
-                <div class="causas-card" id="alimentacao_card">
+                <div class="causas-card" id="alimentacao_card" data-aos="zoom-in-up" data-aos-ease="ease-in-sine" data-aos-delay="400">
                     <img src="./img/crianças card.jpg" alt="">
                     <h3>Alimentação</h3>
                     <span id="texto_grande">+1t</span>
                     <p>de alimentos doados</p>
                 </div>
-                <div class="causas-card" id="ambiente_card">
+                <div class="causas-card" id="ambiente_card" data-aos="zoom-in-left" data-aos-ease="ease-in-sine" data-aos-delay="600">
                     <img src="./img/florestas card.jpg" alt="">
                     <h3>Meio Ambiente</h3>
                     <span id="texto_grande">2000</span>
@@ -69,30 +70,30 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C5FFC7" fill-opacity="1" d="M0,32L30,48C60,64,120,96,180,144C240,192,300,256,360,240C420,224,480,128,540,112C600,96,660,160,720,165.3C780,171,840,117,900,101.3C960,85,1020,107,1080,112C1140,117,1200,107,1260,106.7C1320,107,1380,117,1410,122.7L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 
         <section class="como-funciona">
-            <h2 id="cf_titulo">Como funciona</h2>
+            <h2 id="cf_titulo" data-aos="fade-down" data-aos-ease="ease-in-cubic">Como funciona</h2>
             <div class="como-funciona-container">
                 <ul>
-                    <li>1. A ONG se cadastra </li>
-                    <li>2. Validamos as informações :)</li>
-                    <li>3. Selecionamos os projetos para voce!</li>
-                    <li>4. Você faz a diferença na vida de milhares de pessoas doando!</li>
+                    <li><span class="num-lista" data-aos="zoom-out" data-aos-ease="ease-in-sine" data-aos-duration="600" data-aos-delay="300">1</span> <p data-aos="flip-up" data-aos-duration="500" data-aos-delay="700">A ONG se cadastra</p>  </li>
+                    <li><span class="num-lista" data-aos="zoom-out" data-aos-ease="ease-in-sine" data-aos-duration="600" data-aos-delay="1000">2</span> <p data-aos="flip-up" data-aos-duration="500" data-aos-delay="1400">Validamos as informações :)</p> </li>
+                    <li><span class="num-lista" data-aos="zoom-out" data-aos-ease="ease-in-sine" data-aos-duration="600" data-aos-delay="1700">3</span> <p data-aos="flip-up" data-aos-duration="500" data-aos-delay="2100">Selecionamos os projetos para voce!</p> </li>
+                    <li><span class="num-lista" data-aos="zoom-out" data-aos-ease="ease-in-sine" data-aos-duration="600" data-aos-delay="2400">4</span> <p data-aos="flip-up" data-aos-duration="500" data-aos-delay="2800">Você faz a diferença na vida de milhares de pessoas doando!</p></li>
                 </ul>
-                <div>
-                    <img src="" alt="">
+                <div class="cf-image">
+                    <img src="./img/como funciona.png" alt="Video Institucional" data-aos="zoom-in" data-aos-duration="500" data-aos-ease="ease-in-sine" data-aos-delay="300">
                 </div>
             </div>
         </section>
 
         <section class="contato">
-            <h2>Encontre a gente por aí!</h2>
+            <h2 data-aos="flip-left" data-aos-ease="ease-in-sine" data-aos-duration="500">Encontre a gente por aí!</h2>
             <div class="contato-container">
                 <ul id="redes_sociais">
-                    <li><img class="rede-social" src="./img/instagram.svg" alt=""><p>@prosfero</p></li>
-                    <li><img class="rede-social" src="./img/facebook.svg" alt=""><p>  Prósfero</p></li>
-                    <li><img class="rede-social" src="./img/twitter.svg" alt=""><p>@prosfero</p></li>
-                    <li><img class="rede-social" src="./img/tiktok.svg" alt=""><p>@prosfero</p></li>
+                    <li><img class="rede-social" id="instagram" src="./img/instagram.svg" alt="" data-aos="fade-down-right" data-aos-duration="500" data-aos-ease="ease-in-sine" data-aos-delay="100"><p data-aos="fade-down" data-aos-duration="500" data-aos-ease="ease-in cubic" data-aos-delay="150">@prosfero</p></li>
+                    <li><img class="rede-social" src="./img/facebook.svg" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-ease="ease-in-sine" data-aos-delay="250"><p data-aos="fade-left" data-aos-duration="500" data-aos-ease="ease-in cubic" data-aos-delay="300">Prósfero</p></li>
+                    <li><img class="rede-social" src="./img/twitter.svg" alt="" data-aos="fade-right" data-aos-duration="500" data-aos-ease="ease-in-sine" data-aos-delay="400"><p data-aos="fade-left" data-aos-duration="500" data-aos-ease="ease-in cubic" data-aos-delay="450">@prosfero</p></li>
+                    <li><img class="rede-social" src="./img/tiktok.svg" alt="" data-aos="fade-up-right" data-aos-duration="500" data-aos-ease="ease-in-sine" data-aos-delay="550"><p data-aos="fade-up" data-aos-duration="500" data-aos-ease="ease-in cubic" data-aos-delay="600">@prosfero</p></li>
                 </ul>
-                <img id="contato_img" src="./img/contato.svg" alt="">
+                <img id="contato_img" src="./img/contato.svg" alt="Mulher atendente" data-aos="zoom-in" data-aos-duration="600" data-aos-ease="ease-in-sine" data-aos-delay="400">
             </div>
             
         </section>
@@ -100,21 +101,30 @@
         <span id="anuncio"></span>
     </main>
     <footer>
-        <img src="" alt="">
-        <ul>
-            <li>Projetos</li>
-            <li>Apoiadores</li>
-            <li>Quem Somos</li>
-            <li>FAQ</li>
-            <li>Login</li>
-        </ul>
-        <ul>
-            <li>Termos e Condições</li>
-            <li>Política de Privacidade</li>
-        </ul>
-        <h6>Todos os direitos reservados</h6>
+        <div class="footer-menu">
+            <img src="" alt="">
+            <ul>
+                <a href=""><li>Projetos</li></a>
+                <a href=""><li>Apoiadores</li></a>
+                <a href=""><li>Quem Somos</li></a>
+                <a href=""><li>FAQ</li></a>
+                <a href=""><li>Login</li></a>
+            </ul>
+            <ul>
+                <a href=""><li>Termos e Condições</li></a>
+                <a href=""><li>Política de Privacidade</li></a>
+            </ul>
+    </div>
+        <h6 id="direitos">© Todos os direitos reservados</h6>
     </footer>
 
+
     <script src="./scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          once: true,
+      });
+    </script>
 </body>
 </html>
