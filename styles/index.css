@@ -499,6 +499,10 @@ footer h6 {
       animation: hero-title-responsive-500 6s ease-in-out infinite;
     }
 
+    #hero-action h2 {
+        font-size: 1.1rem;
+    }
+
     @keyframes hero-title-responsive-500 {
         0% {
             transform: translateY(0);
