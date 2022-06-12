@@ -8,7 +8,6 @@ const toggleMenu = () => {
     } else {
         menu.textContent = 'menu';
     }
-    console.log(menu.textContent);
 }
 
 menu.addEventListener('click', toggleMenu);
