@@ -107,9 +107,19 @@ body {
 }
 
 #projeto_foto {
-    width: 15rem;
+    width: 16rem;
     border-radius: 5px;
     object-fit: contain;
+}
+
+.projeto_ong {
+    text-decoration: none;
+    color: #0B2538;
+    transition: all .2s ease-in-out;
+}
+
+.projeto_ong:hover {
+    color: #fdfeff;
 }
 
 .projeto_arrecadado {
@@ -263,7 +273,7 @@ hr {
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1000px) {
     .projetos {
         grid-template-columns: repeat(3, 1fr);
     }

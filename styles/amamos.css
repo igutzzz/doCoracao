@@ -268,7 +268,7 @@ hr {
     text-align: center;
 }
 
-#footer_redes_sociais {
+#redes_sociais {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +296,7 @@ hr {
         margin-top: 2.5rem;
     }
 
-    #footer_redes_sociais {
+    #redes_sociais {
         position: absolute;
         bottom: 0;
         right: 60px;
