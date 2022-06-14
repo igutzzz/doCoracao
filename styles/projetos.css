@@ -109,6 +109,7 @@ body {
 #projeto_foto {
     width: 15rem;
     border-radius: 5px;
+    object-fit: contain;
 }
 
 .projeto_arrecadado {
