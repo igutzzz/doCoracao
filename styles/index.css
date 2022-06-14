@@ -338,35 +338,107 @@ body {
 /* Footer */
 
 footer {
-    background-color: var(--color-primary);
+    background-color: #361540;
     color: #fff;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .footer-menu {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-menu li:hover {
+    color: #8095af;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#tamanho_texto {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-footer ul {
-    list-style-type: none;
+.vl {
+    border-left: 1px solid #fff;
+    content: '';
+    width: 20rem;
+    background-color: #fff;
+    height: 1px;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
+hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 1rem;
 }
 
-footer a:hover {
-    color: rgb(161, 161, 207);
+.footer-info {
+    position: relative;
+    width: 100%;
 }
 
-footer h6 {
+.footer-info {
     text-align: center;
-    margin-top: 2rem;
-    font-weight: 200;
+}
+
+#footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#rede_social_logo {
+    transition: all .15s ease-in-out;
+}
+
+#rede_social_logo:hover {
+    color: #8095af;
+    cursor: pointer;
+}
+
+@media (min-width: 650px){
+    .footer-menu {
+        flex-direction: row;
+    }
+
+    .vl {
+        width: 0px;
+        height: 17rem;
+        margin-top: 2.5rem;
+    }
+
+    #footer_redes_sociais {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
 }
 
 @media (max-width: 768px) {
