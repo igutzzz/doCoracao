@@ -1,0 +1,87 @@
+/*=============================================*/
+/*Grid e grid container*/
+/*Grid container, o que está atrás de todas as partes separadas*/
+.z-grid-container {
+    display: grid;
+    grid-template-columns: 55% 30%;
+    background-color: transparent;
+    padding: 2vw;
+    gap: 5%;
+    height: 160vw;
+  }
+
+  /*Grid item, as partes separadas*/
+  .z-grid-item {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 0vw;
+    font-size: 1.8vw;
+  }
+
+/*Imagem do homem com engrenagem, primeira da direita*/
+#z-img-construcao{
+    width: 25vw;
+    height: 25vw;
+}
+
+
+/*Container de grid ad galeria de ODS's */
+.z-grid-galeria{
+    grid-template-columns: 33% 33% 33% ;
+    background-color: transparent;
+    display: grid;
+    gap: 0.5vw;
+    height: 25vw;
+}
+
+/*Grids onde tem cada ODS*/
+.z-grid-ods{
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 9vw;
+
+}
+
+/*Configuração das imagens das ODS's*/
+.z-grid-ods img{
+    height: 93%;
+    width: auto;
+}
+
+/*Imagens de mãos seguradas juntas, terceira a direita, depois das ODS's*/
+#z-segurando-maos{
+    width: 25vw;
+    height: 25vw;
+}
+
+/*Grid da parte que menciona os membros do grupo*/
+#z-grid-grupo{
+    background-color: transparent;
+    grid-template-columns: 33% 33% 33% ;
+    display: grid;
+    gap: 1vw;
+    height: 30vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+    height: 40vw;
+
+}
+
+/*Área onde vai o nome e a foto de perfil*/
+.z-integrante{
+    background-color: transparent;
+}
+
+/*A´rea onde vai a foto de perfil*/
+.z-perfil{
+    background-color: transparent;
+}
+/*Imagem em si*/
+.z-perfil img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}

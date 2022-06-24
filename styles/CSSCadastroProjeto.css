@@ -1,0 +1,233 @@
+:root {
+    --cinza-especial: rgba(202, 202, 202, 0.67);
+}
+
+
+
+#divPrincipal{
+    padding: 0vw;
+    background-color: transparent;
+    opacity: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;  
+    gap: 2vw;
+    justify-content: space-around;
+    margin-right: 3vw;
+    
+}
+
+
+/*=============================================*/
+
+#z-fundo{
+height: 145vw;
+background-color:  aquamarine;
+padding: 4vw;
+background-image: url(../img/z-fundo2.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+/* Note: backdrop-filter has minimal browser support */
+
+/*Parte onde a informação vai, a branca*/
+#z-area-info{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    padding: 7vw;
+    text-align: center;
+    align-content: center;
+}
+
+/*Para mudar os titulos da bolha branca de info*/
+#z-area-info h1{
+    color: rgb(159, 157, 157);
+}
+
+/*Para mudar o circulo onde se insere o logo*/
+#z-circulo-do-logo{
+    background-color: #D9D9D9;
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    padding-top: 6vw;
+    margin-left: 40%;
+}
+
+/*Circulo do logo*/
+#z-circulo-do-logo p{
+    color: white;
+}
+
+/*A barra dentro do circulo q diz editar*/
+#z-barra-editar{
+    background-color: rgba(255, 255, 255, 0.48);
+    margin-top: 20%;
+    height: 45%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1vw;
+    color: white;
+}
+
+/*Input do nome do Projeto*/
+#z-Nome-do-Projeto{
+    height: 4vw;
+    width: 100%;
+    border-color: var(--cinza-especial);
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+
+/*Grid container para as infos de datas*/
+.z-grid-container-infos{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    background-color: transparent;
+    padding: 0vw;
+    gap: 1.5vw;
+  }
+
+  /*Grid itens dentro do conteiner de info*/
+  .z-grid-item-infos {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+/*Labels da grid de informações*/
+.z-grid-item-infos label{
+    font-size: 1.1vw;
+    color: gray;
+} 
+
+/*Inputs presentes nas grids*/
+.z-grid-item-infos input{ 
+    height: 4vw;
+    width: 68%;
+    font-size: 2vw;
+    color: gray;
+    text-align: center;
+    border-color: var(--cinza-especial);
+  }
+
+/*Text area da descrição simples*/
+#z-descricao-breve{
+    width: 100%;
+    height: 10vw;
+    border-color: gray;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+/*Text area da descrição completa*/
+#z-descricao-completa{
+    width: 100%;
+    height: 20vw;
+    border-color: gray;
+    font-size: 1.5vw;
+    padding: 1vw;  
+}
+
+/*Grid container para as infos de valores e objetivos*/
+  /*Grid itens dentro do conteiner de valores*/
+  .z-grid-item-valores {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-top: 1vw;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  /*Inputs presentes nas grids*/
+.z-grid-item-valores input{ 
+    height: 4vw;
+    width: 100%;
+    font-size: 1.2vw;
+    color: rgb(183, 181, 181);
+    text-align: left;
+    border-color: var(--cinza-especial);
+    padding-left: 1vw;
+  }
+
+ /*Div onde deveria se colocar a imagem do Header*/ 
+  #z-imagem-header{
+    background-color: rgb(207, 205, 205);
+    height: 25vw;
+    padding-top: 10vw;
+    color: white;
+  }
+
+  /*Barra de editar dentro da imagem do hader*/
+  #z-barra-editar2{
+    background-color: #fbf9f9;
+    margin-top: 10%;
+    height: 30%;
+    opacity: 50%;
+    text-align: center;
+    color: black;
+  }
+
+/*grid usada para criar os botões*/
+  .z-grid-item-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/*Classe que incorpora ambos os botões*/
+.z-btn{
+    height: 4vw;
+    width: 16vw;
+    color: white;
+    font-size: 1.8vw;
+    border-radius: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+/*Id do botão de voltar*/
+#z-btn-voltar{
+  background-color: rgba(202, 202, 202, 0.67);
+  border-color: transparent;
+}
+
+/*O que acontece se passar o mouse por cima*/
+#z-btn-voltar:hover{
+  background-color: rgba(156, 156, 156, 0.67);
+}
+/*O que acontece se clicar*/
+#z-btn-voltar:active {
+  background-color: #464747;
+
+}
+
+/*Id do botão de continuar*/
+#z-btn-continuar{
+  background-color: #004698;
+  border-color: transparent;
+}
+
+/*O que acontece se passar o mouse por cima*/
+#z-btn-continuar:hover{
+  background-color: #00326b;
+}
+
+/*O que acontece se clicar*/
+#z-btn-continuar:active {
+  background-color: #3e8d8e;
+
+}
+
+
+#z-texto-final{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  color: gray;
+}

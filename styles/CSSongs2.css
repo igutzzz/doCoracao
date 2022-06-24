@@ -1,0 +1,196 @@
+.banner-projeto{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px 20px;
+    background-image: url(../img/Background\ reciclagem.jpg);
+    background-size: 100%;
+    background-position: 1vw;
+    object-fit: cover;
+    background-repeat: no-repeat; 
+    background-color: #cad3dc;
+}
+
+.logo-projeto{
+  background-color: #fff;
+  width: 15vw;
+  height: 15vw;
+  margin: 0% auto;
+  position: relative;
+  justify-content: center;
+  border-radius: 100%;
+}
+.logo-ong{
+  background-color: rgb(22, 185, 87);
+  width: 19vw;
+  height: 19vw;
+  margin: 0% auto;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/Icone\ reciclagem.png);
+  background-size: 100%;
+  border-radius: 50%;
+}
+.projetos{
+  width: 22vw;
+  height: 23vw;
+  margin: 0% auto;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.projetos h3{
+margin-top: 3vw;
+}
+.itens-projeto img:hover{
+  width: 23vw;
+  height: 23vw;
+  border-radius: 200px;
+  object-fit:cover ;
+}
+
+.itens-projeto img{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 200px;
+  object-fit:cover ;
+}
+
+
+
+.nome-projeto,.nome-ong{
+  background-color: rgb(12, 95, 5);
+  width: 40%;
+  height: 15%;
+  margin: 0% auto;
+  position: relative;
+  padding: 1vw;
+  justify-content: center;
+  opacity: 90%;
+  font-size: 2vw;
+  text-align: center;
+  color: white;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 1vw;
+  }
+  .parte-central {
+    padding: 8vw 6vw 8vw;
+    
+    font-size: 20px;
+    text-align: center;
+  }
+  #projetos-da-ong{
+    padding: 8vw 0vw 8vw;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 25px;
+    display: flex;
+  }
+
+  #propostas{
+    font-family: 'Poppins';
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3vw;
+    padding: 12vw 4vw;
+
+    /*ajuda*/
+  }
+.fotos-projeto{
+
+    justify-content: center;
+
+    /*ajuda*/
+  }
+.fotos-projeto img{
+   max-width: 85%;
+}
+
+#doar-para-projeto{
+  width: 15%;
+  height: 4vw;
+  border: 3px #361540 solid;
+  border-radius: 12px;
+  font-family: 'Poppins';
+  color: #361540;
+}
+
+#doar-para-projeto h2{
+  color: #361540;
+}
+
+#doar-para-projeto:hover{
+  width: 18%;
+  height: 5vw;
+  border: 3px #361540 solid;
+  border-radius: 12px;
+  background-color: #361540;
+  color: #fff;
+}
+#doar-para-projeto h2:hover{
+  color: white;
+  font-family: 'Poppins';
+  font-size: 30px
+}
+#sobre-a-ong{
+  font-family: 'Poppins';
+  font-size: 25px;
+}
+#sobre-a-ong h1{
+  font-size: 60px;
+}
+#comentarios{
+  font-family: 'Poppins';
+  font-size: 25px;
+  justify-content: center;
+
+}
+#sobre-a-ong h1{
+  font-size: 60px;
+}
+
+.relatos{
+  padding: 9vw 7vw 0vw;
+}
+
+.relatos img{
+  margin-top: 5vw;
+  width: 14vw;
+  height: 14vw;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+#seta-esquerda{
+  float: left;
+}
+#seta-direita{
+  float: right;
+}
+#doar_btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: .5rem 5rem;
+  margin: 2rem 0;
+  border: 3px solid #62477D;
+  border-radius: 20px;
+  color: #361540;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+#doar_btn:hover {
+  background-color: #62477D;
+  color: #fff;
+}

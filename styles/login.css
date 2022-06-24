@@ -1,0 +1,109 @@
+.grid-conteiner{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 3vw;
+    padding: 10px;
+}
+.grid-item{
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#prop{
+    width: 40vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    
+}
+#prop img{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=date],select[name=sexo]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+::placeholder{
+    text-align: center;
+}
+input[name=lembrar]{
+    margin: 1vw;
+    font-size: 14px;
+}
+
+.tipo-cadastro{
+    background-color: #ccc;
+    float: left;
+    margin: 4vw;
+    position: re;
+}
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: auto 5;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-right: 10px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.cadastrar{
+    width: 40%;
+    padding: 14px 20px;
+    background-color: #f44336;
+    margin: auto 5;
+}
+.voltar{
+    width: 40%;
+    padding: 14px 20px;
+    background-color: #f44336;
+    margin: auto 5;
+}
+.ong-forms{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    padding: 3vw;
+}
+span.psw {
+    font-size:14px;
+    float: left;
+    /*padding-top: 16px;*/
+    margin-right: 76%;
+    display: flex;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+    
+  }
+  #espaço{
+      display:flex;
+      margin: 3%;
+      padding-top: 2%;
+
+  }

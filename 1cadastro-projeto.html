@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar - Cadastro de Projeto</title>
+    <link rel="stylesheet" type="text/css" href="styles/CSSGeral.css">
+    <link rel="stylesheet" href="styles/CSSCadastroProjeto.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+
+
+</head>
+
+<body class='color-page'>
+    <div class="z-container-principal" id="topo">
+
+        <!--Cabeçalho da página-->
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html">
+                    <div id="logo">
+                        <img src="img/Logo-branco.png">
+                    </div>
+                </a>
+                <ul id="navbar_menu" class="nav-menu">
+                    <li><a href="./pages/projetos.html">Projetos</a></li>
+                    <li><a href="/Apoiadores/APOIADORES.HTML">Apoiadores</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="fac.html">FAQ</a></li>
+                    <a href="login.html">
+                        <li id="login"><span class="material-symbols-outlined">
+                                login
+                            </span>Login</li>
+                    </a>
+
+                </ul>
+                <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
+            </nav>
+
+        </header>
+        <div id="z-fundo">
+
+            <div id="z-area-info">
+                <h1>Seja bem vindo!</h1>
+                <h1>A área de criação do seu projeto</h1><br><br>
+                <p>Insira abaixo os dados</p><br><br>
+
+                <div id="z-circulo-do-logo">
+                    <p><b>Insira um logo</b><br>
+                        png - jpg</p>
+                    <div id="z-barra-editar"><b>editar</b></div>
+                </div><br><br>
+
+                <input type="text" id="z-Nome-do-Projeto" placeholder="Nome do Projeto">
+                <br>
+
+                <div class="z-grid-container-infos">
+                    <div class="z-grid-item-infos">
+                        <label for="z-data-de-inicio">Data de inicio</label>
+                        <input type="date" id="z-data-de-inicio">
+                    </div>
+                    <div class="z-grid-item-infos">
+                        <label for="z-data-de-conclusao">Data de conclusão</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <textarea name="z-descricao-breve" id="z-descricao-breve" cols="30" rows="10"
+                    placeholder="Descrição rapida do projeto..."></textarea>
+                <br><br>
+
+                <textarea name="z-descricao-completa" id="z-descricao-completa" cols="30" rows="10"
+                    placeholder="Descrição completa do projeto..."></textarea>
+
+                <div class="z-grid-container-infos">
+                    <div class="z-grid-item-valores">
+                        <input type="text" id="z-objetivo"
+                            placeholder="Objetivo (Ex: Valor monátio, Ação beneficiente.)">
+                    </div>
+                    <div class="z-grid-item-valores">
+                        <input type="text" id="z-valor-objetivo" placeholder="Descreva em numeros o objetivo">
+                    </div>
+                </div>
+
+                <br><br><br>
+                <div id="z-imagem-header">
+                    <p><b>Insira uma imagem de header</b><br>
+
+                        png-jpg</p>
+                    <div id="z-barra-editar2"><br><b>Editar</b></div>
+                </div>
+                <br><br>
+                <div class="z-grid-container-infos">
+                    <div class="z-grid-item-btn">
+                        <button class="z-btn" id="z-btn-voltar">Voltar</button>
+                    </div>
+                    <div class="z-grid-item-btn">
+                        <button class="z-btn" id="z-btn-continuar">Continuar</button>
+                    </div>
+                </div>
+                <br><br>
+                <p id="z-texto-final">Ao continuar, você concorda com todos os <b>Termos de Serviço</b> da Donar e
+                    confirma que leu a nossa <b>Política de Privacidade</b>.
+                </p>
+            </div>
+        </div>
+
+     
+        <!--Rodapé-->
+        <footer>
+            <div class="footer-menu">
+                <ul>
+                    <p class="footer-menu-titulo">donar</p>
+                    <li>Causas</li>
+                    <li>Quem Somos</li>
+                    <li>Área do Cliente</li>
+                    <li>Atendimento ao Doador</li>
+                    <li>Termos de Uso</li>
+                    <li>Política de Privacidadde</li>
+                </ul>
+                <ul>
+                    <p class="footer-menu-titulo">causas</p>
+                    <li>Crianças e Adolescentes</li>
+                    <li>Defesa aos Animais</li>
+                    <li>Apoio para pessoas com câncer</li>
+                    <li>Preservação do Meio Ambiente</li>
+                    <li>Direitos Humanos</li>
+                    <li>Desenvolvimento Comunitário</li>
+                    <li>Cultura e Arte</li>
+                </ul>
+                <div class="vl"></div>
+                <ul>
+                    <p class="footer-menu-titulo">acessibilidade</p>
+                    <li id="tamanho_texto">Tamanho do Texto <span
+                            class="material-symbols-outlined">text_increase</span><span
+                            class="material-symbols-outlined">text_decrease</span></li>
+                    <li>Modo Noturno</li>
+                    <li>Alto Contraste</li>
+                    <li>Weblibras</li>
+                    <li>Deficiência Visual</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-info">
+                <p>Todos os direitos reservados ©</p>
+                <div id="redes_sociais">
+                    <i id="rede_social_logo" class="fa-brands fa-facebook-f fa-xl"></i>
+                    <i id="rede_social_logo" class="fa-brands fa-twitter fa-xl"></i>
+                    <i id="rede_social_logo" class="fa-brands fa-instagram fa-xl"></i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

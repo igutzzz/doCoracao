@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*Esse é o style de todo o body, não necessariamente do rodapé, porém essa fonte é usada no rodapé também*/
+
+* { /* Esse * signifa o documento todo, com isso, a página toda perde seu margin e padding inicial, fazendo
+    com que o documento todo fique com o tamanho da tela que foi definido no css. 
+    Ou seja, o rodapé ocupa 100% da tela horizontalemente.
+    */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+footer {
+    background-color: #361540;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-menu li:hover {
+    color: #8095af;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#tamanho_texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    content: '';
+    width: 20rem;
+    background-color: #fff;
+    height: 1px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    position: relative;
+    width: 100%;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#rede_social_logo {
+    transition: all .15s ease-in-out;
+}
+
+#rede_social_logo:hover {
+    color: #8095af;
+    cursor: pointer;
+}
+
+@media (min-width: 650px){
+    .footer-menu {
+        flex-direction: row;
+    }
+
+    .vl {
+        width: 0px;
+        height: 17rem;
+        margin-top: 2.5rem;
+    }
+
+    #redes_sociais {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
+}

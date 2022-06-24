@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cadastro-ong.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+           <!--Código do Menu -->
+           <nav class="navbar">
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.svg" alt="Logo Donar"></a>
+            </div>
+            <ul id="navbar_menu" class="nav-menu">
+                <li><a href="./pages/projetos.html">Projetos</a></li>
+                <li><a href="apoiadores.HTML">Apoiadores</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="fac.html">FAQ</a></li>
+                <a href="login.html"><li id="login"><span class="material-symbols-outlined">
+                    login
+                    </span>Login</li></a>
+    
+            </ul>
+            <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
+        </nav>
+        <div class="conteinar-2">
+            <h2>CADASTRO DE ONG</h2>
+           </div>
+    <div class="grid-conteiner">
+        <div class="grid-item">
+            <div class="Lado-esquerdo">
+                <div class="ong-forms">
+                    <div class="dados-pessoais">
+                        <h2>Dados da ONG</h2>
+                        <br>
+                        <label for="snome"><b>Nome da ONG</b></label>
+                        <input type="text" placeholder="Insira nome da ONG" name="nomeONG" id="nomeONG" required>
+                        <br>
+                        <label for="abertura"><b>Data de registro da ONG</b></label>
+                        <input type="date" name="" id="abertura">
+                        <br>
+                        <label for="nome"><b>Endereço da ONG</b></label>
+                        <input type="text" placeholder="Insira o endereço completo" name="endereco" id="endereco" required>
+      
+                        <label for="telefone"><b>Telefone da ONG</b></label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Insira o Telefone da ONG" required
+                         onkeypress="$ (this).mask('(00) 0000-00009')">
+    
+                        <label for="cnpj"><b>CNPJ da ONG</b></label>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="Insira o CNPJ daONG"
+                         onkeypress="$ (this) .mask('00.000.000/0000-00')" required>
+                         <br>
+                         <label for="site"><b>SITE ou rede social da ONG</b></label>
+                         <input type="text" placeholder="Insira aqui" name="site" id="site" required>
+                         <br>
+                         <br>
+                        <br>
+                        <br>
+                        <h2>Dados do Representante da ONG</h2>
+                        <br>
+                            <label for="nome"><b>Nome do representante da ONG</b></label>
+                            <input type="text" placeholder="Insira seu nome" name="nome" id="nome" required>
+
+                        <label for="snome"><b>Sobrenome do representante da ONG</b></label>
+                        <input type="text" placeholder="Insira seu Sobrenome" name="snome" id="snome" required>
+
+                        <br>
+                        <label for="sexo"><b>Sexo</b></label>
+                        <select name="sexo" id="sexo" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="indefinido">Indefinido</option>
+                            <option value="excluirpelamor">Bruno</option>
+                        </select>
+                        <br>
+                        <label for="nascimento"><b>Data de nascimento</b></label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+           
+                    <label for="telefone"><b>Celular para contato</b></label>
+                    <input type="text" name="celular" id="celular" placeholder="Insira o celular" required
+                     onkeypress="$ (this).mask('(00) 0000-00009')">
+                 <br>
+                 <br>
+                 <br>
+                 <h2>Descreva o trabalho da ONG</h2>
+                 <br>
+                     <label for="nome"><b>Descreva o trabalho da ONG</b></label> <br>
+                     <textarea rows="10" cols="80" maxlength="1000" type="text" placeholder="Escreva aqui" name="historia" id="historia" required></textarea>
+                    <br>
+                    <br> <br>
+                    <br>
+               
+                    <h2>Dados para login</h2>
+                    <br>
+                    <label for="email"><b>E-Mail</b></label>
+                    <input type="text" placeholder="Insira seu E-mail" name="email" id="email" required>
+                    <label for="senha"><b>Senha</b></label>
+                    <input type="password" placeholder="Insira sua senha" name="senha" id="senha" required>
+                    <label for="csenha"><b>Confirme sua senha</b></label>
+                    <input type="password" placeholder="Re-insira sua senha" name="csenha" id="csenha" required> 
+                    <br><br><br>
+                    
+                        <button type="button" class="voltar">Voltar</button>
+                        <button type="submit"> Criar conta</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="lado-direito">
+                <div id="prop">
+                    <img src="./img/BEMVINDO.png" alt="Boas vindas!">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   
+    
+</body>
+</html>

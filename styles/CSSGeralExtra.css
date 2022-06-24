@@ -1,0 +1,271 @@
+/*Geral -------------------------*/
+:root {
+    --color-primary: #6B509B;
+    --bg-color: #E5E5E5;
+    --light-green: #52B69A;
+}
+
+/* Está iniciando todos os elementos com margin e padding de 0*/
+*{margin: 0; padding: 0} 
+
+/*Está definindo as caracteristicas do body*/
+body { 
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/*===================================*/
+/*Header*/
+
+
+
+
+/*Logo ----------------------------*/
+
+.logo{position:absolute; 
+    width:21vw; 
+    height: auto;}
+
+.logo img{
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 4%}
+
+/*Define tudo da Header, o tamanho dela, o fundo dela, etc. */
+header{
+    width: 100%; 
+    height: 75px;
+    background-color:var(--color-primary);
+    position:relative; 
+    top: 0}
+
+
+    #login {
+        display: flex;
+        align-items: center;
+    }
+    
+    #hamburger_menu {
+        display: none;
+        overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+        
+        /* Navbar */
+        #navbar_menu {
+            transition: 0.3s ease-in-out;
+        }
+    
+        .nav-menu {
+            display: block;
+            height: 0;
+            visibility: hidden;
+            overflow-y: hidden;
+            padding: 2rem;
+        }
+    
+        .open {
+            visibility: visible;
+            position: absolute;
+            top: 101px;
+            background-color: var(--color-primary);
+            width: 100%;
+            height: 100vh;
+            z-index: 99;
+            left: 0;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+    
+        #navbar_menu li {
+            margin: 4rem 0;
+            font-size: 2rem;
+        }
+    
+        #hamburger_menu {
+            display: block;
+        }
+    
+        #hamburger_menu:hover {
+            cursor: pointer;
+        }
+    
+        #hamburger_menu:focus {
+            outline: none;
+        }
+    }
+
+
+
+
+/* Navbar---------------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: #fff;
+
+}
+
+/*Aqui foi definido a posição do nav */
+nav{position: absolute;right: 30px; bottom: 0px;}
+/*Aqui foi definido onde o texto do nav (os links) iam ficar, a posição deles. */
+nav ul li{
+    float:left; 
+    color:#fff;
+    width: auto;
+    list-style: none;
+    margin-right: 1rem;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    font-family: 'verdana';
+    list-style: none;}
+/*Aqui foi definido a cor das letras, e embaixo que a cor delas ia mudar
+quando passasse o mouse por cima. */
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem}
+nav ul li a:hover{ color: #8095af;}
+/*=============================================*/
+
+
+
+
+/*=============================================*/
+/*Footer*/
+
+/*==============================*/
+/*  Aqui é a info do rodapé */
+footer {
+    background-color: #361540;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-menu li:hover {
+    color: #8095af;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#tamanho_texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    content: '';
+    width: 20rem;
+    background-color: #fff;
+    height: 1px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    position: relative;
+    width: 100%;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#rede_social_logo {
+    transition: all .15s ease-in-out;
+}
+
+#rede_social_logo:hover {
+    color: #8095af;
+    cursor: pointer;
+}
+
+@media (min-width: 650px){
+    .footer-menu {
+        flex-direction: row;
+    }
+
+    .vl {
+        width: 0px;
+        height: 17rem;
+        margin-top: 2.5rem;
+    }
+
+    #redes_sociais {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
+}
+#doar_btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: .5rem 5rem;
+    margin: 2rem 0;
+    border: 3px solid #62477D;
+    border-radius: 20px;
+    color: #361540;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#doar_btn:hover {
+    background-color: #62477D;
+    color: #fff;
+}
+
+
+
+
+/*=========================================*/

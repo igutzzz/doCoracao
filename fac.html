@@ -1,0 +1,258 @@
+<html>
+
+<head>
+    <link href="/FAC/styles/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <link rel="stylesheet" href="styles/fac.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!--Esse script vai na tag head, ele ativa o funcionamento dos icones das redes sociais e do tamanho do texto-->
+    <link rel=" stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <script src="https://kit.fontawesome.com/218777f784.js" crossorigin="anonymous"></script>
+    <title>FAC - Perguntas frequentes e envie sua mensagem</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho da página-->
+
+    <header class="header">
+        <nav class="navbar">
+            <div id="logo">
+                <img src="img/Logo-branco.png">
+            </div>
+            <ul id="navbar_menu" class="nav-menu">
+                <li><a href="./pages/projetos.html">Projetos</a></li>
+                <li><a href="/Apoiadores/APOIADORES.HTML">Apoiadores</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="fac.html">FAQ</a></li>
+                <a href="login.html">
+                    <li id="login"><span class="material-symbols-outlined">login</span>Login</li>
+                </a>
+
+            </ul>
+            <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
+        </nav>
+
+    </header>
+
+    <!--Background 1 + título e subtítulo-->
+
+    <div id="bg1">
+        <div class="titletext" id="titletext1">
+
+            <div>
+                <br><br><br><br><br><br><br>
+                <h1>FAC - Perguntas mais frequentes</h1>
+            </div>
+            <br>
+            <div>
+                <p>Essa é uma página que tenta responder a algumas dúvidas frequentes dos usúarios do site DONAR</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Section delimitando a sessão de FAC - Perguntas recentes inteiramente-->
+
+    <section class="FAC" id="colorfac">
+
+        <br><br>
+
+        <!--Div delimitando as perguntas e respostas do FAC-->
+
+        <div class="asksprincipal">
+
+            <!--Div para perguntas-->
+
+            <div class="sectionfac">
+                <div class="asks" id="pergunta1">
+                    <button class="botãoask" onclick="exibirpergunta1()"><span>Como funciona nosso
+                            site?</span></button>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="asks" id="pergunta2">
+                    <button class="botãoask" onclick="exibirpergunta2()"><span>Como posso cadastrar um projeto da
+                            minha
+                            ONG?</span></button>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="asks" id="pergunta3">
+                    <button class="botãoask" onclick="exibirpergunta3()"><span>Posso entrar em contato com os
+                            organizadores do
+                            site?</span></button>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="asks" id="pergunta4">
+                    <button class="botãoask" onclick="exibirpergunta4()"><span>Como faço para doar?</span></button>
+                </div>
+            </div>
+
+            <!--Div para respostas-->
+
+            <div class="respostas">
+                <div id="exibirinfo" style="display: block;">
+                    <h1>
+                        <---------- Para tirar sua duvida clique em qualquer pergunta à esquerda</h1>
+                </div>
+                <div id="resposta1" style="display: none ;">
+                    <p>O site funciona com o intuito de divulgar e mediar doações de pessoas físicas e jurídicas
+                        para
+                        eventos, causas ou campanhas de caridade feitas por ONGs no Estado de São Paulo.</p>
+                </div>
+                <div id="resposta2" style="display: none ;">
+                    <p>Os projetos podem ser cadastrados a partir da criação da conta e após a avaliação de um
+                        especialista em causas sociais. </p>
+                </div>
+                <div id="resposta3" style="display: none ;">
+                    <p>Para entrar em contato nós disponibilizamos na nossa página inicial e rodapé nossas formas de
+                        contato, como email: donarcomercial@gmail.com, redes sociais etc.</p>
+                </div>
+                <div id="resposta4" style="display: none ;">
+                    <p>Para doar, um doador tanto pessoa física como jurídica se cadastra no nosso site, escolhe o
+                        projeto com base em seu foco pessoal ou social etc, e doa, SIMPLES ASSIM!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <!--Script para quando o usuário clicar em uma pergunta o display de cada resposta muda,
+        mostrando ao usuário apenas a pergunta clicada.-->
+
+        <script>
+            function exibirpergunta1() {
+                document.getElementById('resposta1').style.display = 'block';
+                document.getElementById('resposta2').style.display = 'none';
+                document.getElementById('resposta3').style.display = 'none';
+                document.getElementById('resposta4').style.display = 'none';
+                document.getElementById('exibirinfo').style.display = 'none';
+            }
+            function exibirpergunta2() {
+                document.getElementById('resposta2').style.display = 'block';
+                document.getElementById('resposta1').style.display = 'none';
+                document.getElementById('resposta3').style.display = 'none';
+                document.getElementById('resposta4').style.display = 'none';
+                document.getElementById('exibirinfo').style.display = 'none';
+            }
+            function exibirpergunta3() {
+                document.getElementById('resposta3').style.display = 'block';
+                document.getElementById('resposta1').style.display = 'none';
+                document.getElementById('resposta2').style.display = 'none';
+                document.getElementById('resposta4').style.display = 'none';
+                document.getElementById('exibirinfo').style.display = 'none';
+            }
+            function exibirpergunta4() {
+                document.getElementById('resposta4').style.display = 'block';
+                document.getElementById('resposta1').style.display = 'none';
+                document.getElementById('resposta2').style.display = 'none';
+                document.getElementById('resposta3').style.display = 'none';
+                document.getElementById('exibirinfo').style.display = 'none';
+
+            }
+
+        </script>
+
+        <br><br>
+
+    </section>
+
+    <!--Div para a segunda parte do FAC, com campos para serem respondidos para feedback-->
+
+    <div id="bg2">
+        <div class="titletext" id="titletext2">
+            <div>
+                <br><br><br><br><br><br>
+                <h1>Gostaria de dar um feedback? dicas, críticas, etc.</h1>
+            </div>
+            <br>
+            <div>
+                <p>Preencha os campos abaixo, envie seu feedback e faremos de tudo para melhorar a partir da sua
+                    mensagem!</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Section que delimita o forms-->
+
+    <section class="feedback" id="colorfac">
+
+        <br>
+        <div class="form">
+            <form>
+                <p>Insira seu nome:</p><input type="text" name="nome" maxlength="60" placeholder="Seu nome..."><br>
+                <label for="email">
+                    <br>
+                    <p>Insira seu email: </p>
+                </label>
+                <input type="email" id="email" placeholder="Seu email..."><br><br>
+                <p id="suamsg">Insira sua mensagem:</p><textarea text="text"
+                    placeholder="Sua mensagem..."></textarea><br><br>
+                <button type="button" name="botao" class="botão">Enviar!</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--Footer/Rodapé do site-->
+
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <p class="footer-menu-titulo">donar</p>
+                <li>Causas</li>
+                <li>Quem Somos</li>
+                <li>Área do Cliente</li>
+                <li>Atendimento ao Doador</li>
+                <li>Termos de Uso</li>
+                <li>Política de Privacidadde</li>
+            </ul>
+            <ul>
+                <p class="footer-menu-titulo">causas</p>
+                <li>Crianças e Adolescentes</li>
+                <li>Defesa aos Animais</li>
+                <li>Apoio para pessoas com câncer</li>
+                <li>Preservação do Meio Ambiente</li>
+                <li>Direitos Humanos</li>
+                <li>Desenvolvimento Comunitário</li>
+                <li>Cultura e Arte</li>
+            </ul>
+            <div class="vl"></div>
+            <ul>
+                <p class="footer-menu-titulo">acessibilidade</p>
+                <li id="tamanho_texto">Tamanho do Texto <span
+                        class="material-symbols-outlined">text_increase</span><span
+                        class="material-symbols-outlined">text_decrease</span></li>
+                <li>Modo Noturno</li>
+                <li>Alto Contraste</li>
+                <li>Weblibras</li>
+                <li>Deficiência Visual</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-info">
+            <p>Todos os direitos reservados ©</p>
+            <div id="redes_sociais">
+                <i id="rede_social_logo" class="fa-brands fa-facebook-f fa-xl"></i>
+                <i id="rede_social_logo" class="fa-brands fa-twitter fa-xl"></i>
+                <i id="rede_social_logo" class="fa-brands fa-instagram fa-xl"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

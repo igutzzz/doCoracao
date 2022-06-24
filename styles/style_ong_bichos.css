@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*  logotipo da ONG*/
+.container {
+    display: flex;
+    align-items: center;
+    width: 1520px;
+    height: 600px;
+    background-color: #F89D0E;
+    text-decoration-color: #C5FFC7;
+    margin-top: -100px;
+}
+.projetos{
+    width: 22vw;
+    height: 23vw;
+    margin: 0% auto;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+
+.topo_ong {
+    display: inline-block;
+    width: 1520px;
+    height: 430px;
+    background-size:  100%;
+    margin: auto;
+    background-color: lightgray;
+  
+}
+
+
+div#topo1 {
+    background-image: url('../img/caesegatosbanner.jpg');
+    z-index: 1;
+    opacity: 1;
+
+}
+.container img {
+    width: 300px;
+    float: left;
+ }
+
+
+.titulo {
+    display: inline-block;
+    width: 1520px;
+    height: 200px;
+    margin: 100px;
+    margin-top: 428px;
+    margin-left: -1px;
+    font-size: 60px;
+    font-family: Verdana;
+    font-weight: 3000;
+    opacity: 1;
+    background-color: #F89D0E; 
+    font-style: var(-184e77-color-primary);
+    text-align: center;
+    
+}
+
+div#logo1 {
+    background-image: url('../img/logo_planeta.png');
+    background-size: 110%;
+    border: 2px solid black;
+    width: 70px;
+    height: 70px;
+    margin-top: -60px;
+    margin-left: 390px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 1vw;
+  }
+  .parte-central {
+    padding: 8vw 6vw 8vw;
+    
+    font-size: 20px;
+    text-align: center;
+  }
+  #projetos-da-ong{
+    padding: 8vw 0vw 8vw;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 25px;
+    display: flex;
+  }
+.itens-projeto img:hover{
+  width: 23vw;
+  height: 23vw;
+  border-radius: 200px;
+  object-fit:cover ;
+}
+
+.itens-projeto img{
+  width: 23vw;
+  height: 23vw;
+  border-radius: 200px;
+  object-fit:cover ;
+}
+.projetos h3{
+    margin-top: 3vw;
+}
+.fotos-projeto{
+
+    justify-content: center;
+
+    /*ajuda*/
+  }
+.fotos-projeto img{
+   max-width: 85%;
+}
+
+#comentarios{
+    font-family: 'Poppins';
+    font-size: 25px;
+    justify-content: center;
+  
+  }
+  #sobre-a-ong h1{
+    font-size: 60px;
+  }
+  
+  .relatos{
+    padding: 2vw 2vw 0vw;
+  }
+  
+  .relatos img{
+    margin-top: 1vw;
+    width: 18vw;
+    height: 18vw;
+    object-fit: cover;
+    border-radius: 200px;
+  }
+  
+  #seta-esquerda{
+    float: left;
+  }
+  #seta-direita{
+    float: right;
+  }
+  .projetos{
+    width: 22vw;
+    height: 23vw;
+    margin: 0% auto;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  .projetos h3{
+  margin-top: 3vw;
+  }
+  .itens-projeto img:hover{
+    width: 23vw;
+    height: 23vw;
+    border-radius: 200px;
+    object-fit:cover ;
+  }
+  
+  .itens-projeto img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 200px;
+    object-fit:cover ;
+  }
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    padding: 10px;
+    font-size: 12px;
+    justify-content: center;
+    color:#FFFFFF;
+  }
+  .grid-item2 {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .grid-item2 h6{
+    font-size: 18px;
+    margin: 0vw 0vw 0.4vw;
+    color: #FFFFFF;
+  }
+    .grid-item2 a{
+  color: #81618bea;  
+}
+  
+  body{
+    margin: 0;
+  }
+  .rodape{
+    padding: 2.6vw 5vw;
+    background-color: #361540;
+  }
+  .linhazinha{
+    margin:0% 13%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .redes-e-copy{
+    margin:0% 13%;
+    text-align: center;
+  } 
+  
+
+
+  #doar-para-projeto{
+    width: 15%;
+    height: 4vw;
+    border: 3px #361540 solid;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    color: #361540;
+  }
+  
+  #doar-para-projeto h2{
+    color: #361540;
+  }
+  
+  #doar-para-projeto:hover{
+    width: 18%;
+    height: 5vw;
+    border: 3px #361540 solid;
+    border-radius: 12px;
+    background-color: #361540;
+    color: #fff;
+  }
+  #doar-para-projeto h2:hover{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 30px
+  }  
+/*
+#ONG_logo_img {
+    width: 15vw;
+  display: flex;
+  position: relative;
+  right: 200 px;
+
+justify-content: center;
+}
+.LOGO_ONG {
+    display: inline-block;
+    border: 1px solid black;
+    background-size: 100%;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 1512px;
+    height: 430px;
+    
+}
+
+div#q1 {
+background-image: url('img/animais.png');
+}
+
+
+div#q2 {
+background-image: url('img/logoong.png');
+background-size: 100%;
+border: 1px solid black;
+width: 100px;
+height: 100px;
+margin-top: 0;
+margin-left: 50%;
+border-radius: 50%;
+
+}
+*/
+
+
+/* ----------------------------- alterações acima ------------------------------------  */
+:root {
+    --color-primary: #6B509B;
+    --bg-color: #F1F9F6;
+    --light-green: #52B69A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: #6B509B;
+
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+#navbar_menu li {
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+#navbar_menu a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar_menu a:hover {
+    color: #8095af;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+}
+
+#hamburger_menu {
+    display: none;
+    overflow: hidden;
+}
+
+
+
+/* Doar */
+
+.doar {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.doar h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.doar h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#doar_btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: .5rem 5rem;
+    margin: 2rem 0;
+    border: 3px solid #62477D;
+    border-radius: 20px;
+    color: #361540;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#doar_btn:hover {
+    background-color: #62477D;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #361540;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-right: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-menu li:hover {
+    color: #8095af;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#tamanho_texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    content: '';
+    width: 20rem;
+    background-color: #fff;
+    height: 1px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    position: relative;
+    width: 100%;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#rede_social_logo {
+    transition: all .15s ease-in-out;
+}
+
+#rede_social_logo:hover {
+    color: #8095af;
+    cursor: pointer;
+}
+
+@media (min-width: 650px){
+    .footer-menu {
+        flex-direction: row;
+    }
+
+    .vl {
+        width: 0px;
+        height: 17rem;
+        margin-top: 2.5rem;
+    }
+
+    #redes_sociais {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+    /* Navbar */
+    #navbar_menu {
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-menu {
+        display: block;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        padding: 2rem;
+    }
+
+    .open {
+        visibility: visible;
+        position: absolute;
+        top: 101px;
+        background-color: #6B509B;
+        width: 100%;
+        height: 100vh;
+        z-index: 999999;
+        left: 0;
+        padding: 2rem;
+        overflow-y: auto;
+    }
+
+    #navbar_menu li {
+        margin: 4rem 0;
+        font-size: 2rem;
+    }
+
+    #hamburger_menu {
+        display: block;
+    }
+
+    #hamburger_menu:hover {
+        cursor: pointer;
+    }
+
+    #hamburger_menu:focus {
+        outline: none;
+    }
+
+    .banner_texto {
+        font-size: 1.5rem;
+        left: 5%;
+    }
+
+    .texto-principal {
+        margin: 10rem 5rem;
+    }
+
+    #titulo {
+        font-size: 2.3rem;
+    }
+}

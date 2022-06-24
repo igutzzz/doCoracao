@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Donar</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.svg" alt="Logo Donar"></a>
+        </div>
+        
+        <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
+    </nav>
+    <div class="grid-conteiner">
+        <div class="grid-item">
+            <div class="Lado-esquerdo">
+                <div id="prop">
+                    <img src="./img/hero image.svg" alt="Boas vindas!">
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="lado-direito">
+                <div class="login-forms">
+                    <label for="usEmail"><b>E-mail</b></label>
+                    <input type="text" placeholder="Insira seu E-mail" name="usEmail" required>
+
+                    <label for="psw"> <b>Senha</b></label>
+                    <input type="password" placeholder="Insira sua Senha" name="psw" required>
+                    <span class="psw"><a href="#">Esqueci a Senha</a></span>
+                    <div id="espaço">
+                        <label>
+                            <input type="checkbox" checked="checked" name="lembrar"> Lembrar-se
+                        </label>
+                    </div>
+                    <br>
+                    
+                    <button type="button" class="cadastrar" onclick="cadastro_ong.html"><a href="cadastro_ong.html"> Crie sua conta </a></button>
+                    <button type="submit">Login</button>
+                </div>
+                
+            
+            </div>
+        </div>
+    
+    </div>
+   
+</body>
+</html>

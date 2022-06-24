@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pagamento.css">
+    <title>Jogar nos Outros DOCUMENTOS</title>
+</head>
+<body>
+    presta atenção, copie a seção inteira abaixo para a parte de pagamento
+
+    <div class="tabela-pagamento">
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/doar-foto.png" class="avatar">
+      <h2>Ficamos felizes que queria ajudar esta causa!</h2>
+      <h2>Selecione um metodo de pagamento para ajudar.</h2>
+    </div>
+
+    <div class="container-grid">
+        <div class="grid-item">
+            <input type="radio">Pix <br>
+            <input type="radio">Débito <br>
+            <input type="radio">Crédito <br>
+        </div>
+        <div class="grid-item" id="valores">
+            <div class="pagamento-predefinido">
+                
+                    R$ 05,00
+                
+            </div>
+
+            <div class="pagamento-predefinido">
+                
+                    R$ 10,00
+                
+            </div>
+            
+            <div class="pagamento-predefinido">
+
+                    R$ 25,00
+                
+                </div>
+            </div>
+            <div class="grid-item">
+
+            </div>
+            <div class="grid-item" id="valores">
+                <div class="input-valor">
+                    <input type="text" placeholder="R$ 1.000,00" >
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="roda">
+            <div class="pro-ant">
+                <button>
+                    Cancelar
+                </button>
+            </div>
+    
+            <div class="pro-ant">
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+                    Próximo
+                </button>
+            </div>
+
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  
+    
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img/doar-foto.png" class="avatar">
+        <h2>Ficamos felizes que queria ajudar esta causa!</h2>
+        <h2>Selecione um metodo de pagamento para ajudar.</h2>
+      </div>
+  
+          <div class="roda">
+              <div class="pro-ant">
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                      Voltar
+                  </button>
+              </div>
+      
+              <div class="pro-ant">
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+                      Próximo
+                  </button>
+              </div>
+  
+    </form>
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </div>
+</body>
+</html>
