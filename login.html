@@ -28,12 +28,12 @@
         </div>
         <div class="grid-item">
             <div class="lado-direito">
-                <div class="login-forms">
-                    <label for="usEmail"><b>E-mail</b></label>
-                    <input type="text" placeholder="Insira seu E-mail" name="usEmail" required>
+                <form method="POST" action="./php/login.php" class="login-forms">
+                    <label for="Email"><b>E-mail</b></label>
+                    <input type="email" placeholder="Insira seu E-mail" name="Email" required>
 
-                    <label for="psw"> <b>Senha</b></label>
-                    <input type="password" placeholder="Insira sua Senha" name="psw" required>
+                    <label for="Senha"> <b>Senha</b></label>
+                    <input type="password" placeholder="Insira sua Senha" name="Senha" required>
                     <span class="psw"><a href="#">Esqueci a Senha</a></span>
                     <div id="espaço">
                         <label>
@@ -42,9 +42,9 @@
                     </div>
                     <br>
                     
-                    <button type="button" class="cadastrar" onclick="cadastro_ong.html"><a href="cadastro_ong.html"> Crie sua conta </a></button>
+                    <a href="cadastro.html"><button type="button" class="cadastrar"> Crie sua conta</button></a>
                     <button type="submit">Login</button>
-                </div>
+                </form>
                 
             
             </div>
