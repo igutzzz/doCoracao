@@ -1,0 +1,9 @@
+.menu {
+    padding: 1rem;
+}
+
+#avatar {
+    border-radius: 100%;
+    width: 15rem;
+    margin: 1rem 0;
+}

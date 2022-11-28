@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>donar</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/perfil.css">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/218777f784.js" crossorigin="anonymous"></script>
@@ -38,8 +39,24 @@
         </ul>
         <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
     </nav>
-    <h1>Olá, <?php echo $_SESSION['nome'] ?></h1>
 
+    <main>
+        <aside class="menu">
+            <img src="./img/avatar.jpg" alt="Foto de perfil" id="avatar">
+            <h1>Olá, <?php echo $_SESSION['nome'] ?></h1>
+            <ul>
+                <li>Conta</li>
+                <li>Doações</li>
+                <li>Histórico</li>
+                <li>Configurações</li>
+            </ul>
+        </aside>
+        <div class="info">
+            <section>
+                <h1>Finanças</h1>
+            </section>
+        </div>
+    </main>
     <footer>
         <div class="footer-menu">
             <ul>
@@ -80,6 +97,6 @@
                 <i id="rede_social_logo" class="fa-brands fa-instagram fa-xl"></i>
             </div>
         </div>
-    </footer>
+    </footer>   
 </body>
 </html>
