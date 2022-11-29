@@ -42,13 +42,16 @@
 
     <main>
         <aside class="menu">
-            <img src="./img/avatar.jpg" alt="Foto de perfil" id="avatar">
-            <h1>Olá, <?php echo $_SESSION['nome'] ?></h1>
+            <div class="user">
+                <img src="./img/avatar.jpg" alt="Foto de perfil" id="avatar">
+                <h1>Olá, <?php echo $_SESSION['nome'] ?></h1>
+                <p><?php echo $_SESSION['email'] ?></p>
+            </div>
             <ul>
-                <li>Conta</li>
-                <li>Doações</li>
-                <li>Histórico</li>
-                <li>Configurações</li>
+                <li><i class="fa-solid fa-user"></i></i><p> Conta</p></li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i><p>Doações</p></li>
+                <li><i class="fa-regular fa-clock"></i><p> Histórico</p></li>
+                <li><i class="fa-solid fa-gear"></i><p> Configurações</p></li>
             </ul>
         </aside>
         <div class="info">

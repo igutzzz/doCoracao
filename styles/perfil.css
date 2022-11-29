@@ -1,9 +1,64 @@
+main {  
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "menu main main"
+        "menu main main"
+        "menu main main";
+}
+
+.info { 
+    padding: 2rem 3rem;
+    grid-area: main; 
+}
+
+
 .menu {
     padding: 1rem;
+    border-right: 4px solid #6B509B;
+    grid-area: menu; 
 }
 
 #avatar {
     border-radius: 100%;
     width: 15rem;
     margin: 1rem 0;
+    -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75);
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user h1 {
+    font-size: 2rem;
+}
+
+.menu ul {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    font-size: 1.4rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.75rem 0;
+}
+
+.menu li p {
+    width: 10rem;
 }
