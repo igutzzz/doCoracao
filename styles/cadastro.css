@@ -3,6 +3,7 @@ main {
 }
 
 main h1 {
+    font-size: 2.3rem;
     text-align: center;
     margin: 1rem 0;
 }
@@ -11,7 +12,29 @@ form {
     margin: 0 43.5vw;
 }
 
+label {
+    font-weight: 600;
+}
+
 input {
     padding: .5rem .5rem;
     font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 10rem;
+    padding: .75rem;
+    border: none;
+    background-color: rgb(40, 175, 36);
+    color: rgb(241, 239, 239);
+    transition: all .2s ease;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(83, 179, 83);
 }

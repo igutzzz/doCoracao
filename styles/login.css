@@ -22,7 +22,16 @@
     margin-right: auto;
     
 }
-input[type=text],input[type=password]{
+input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -87,6 +96,7 @@ span.psw {
     float: left;
     /*padding-top: 16px;*/
     margin-right: 76%;
+    margin-bottom: 2rem;
     display: flex;
   }
   

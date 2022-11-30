@@ -7,6 +7,8 @@
       header("Location: index.html"); exit;
   }
 
+
+
   ?>
 
 <!DOCTYPE html>
@@ -35,6 +37,9 @@
             <a href="login.html"><li id="login"><span class="material-symbols-outlined">
                 login
                 </span>Login</li></a>
+            <a href="perfil.php"><li>
+                <i class="fa-solid fa-user"></i>
+            </li></a>
 
         </ul>
         <span id="hamburger_menu" class="material-symbols-outlined">menu</span>
@@ -53,10 +58,46 @@
                 <li><i class="fa-regular fa-clock"></i><p> Histórico</p></li>
                 <li><i class="fa-solid fa-gear"></i><p> Configurações</p></li>
             </ul>
+            <form method="POST" action="./php/logout.php">
+                <button type="submit" id="logout" name="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>        Sair</button>
+            </form>
+
         </aside>
         <div class="info">
-            <section>
-                <h1>Finanças</h1>
+            <section class="cards-container">
+                <div class="card">
+                    <p class="sm-text">Doações</p>
+                    <p class="lg-text">12</p>
+                </div>
+                <div class="card">
+                    <p class="sm-text">Total</p>
+                    <p class="lg-text">R$543,50</p>
+                </div>
+                <div class="card">
+                    <p class="sm-text">Instituções</p>
+                    <p class="lg-text">7</p>
+                </div>
+            </section>
+            <section class="listas">
+               <div class="list">
+                <h3>Instituições</h3>
+                <ul>
+                    <li>Amamos</li>
+                    <li>Educare</li>
+                    <li>Nossa Voz</li>
+                    <li>Mundo Animal</li>
+                    <li>Criança Esperança</li>
+                    <li>Lar da Vovó</li>
+                </ul>
+               </div>
+               <div class ="list">
+                <h3>Top Categorias</h3>
+                <ul id="categorias">
+                    <li>Educação</li>
+                    <li>Saúde</li>
+                    <li>Alimentação</li>
+                </ul>
+               </div> 
             </section>
         </div>
     </main>
